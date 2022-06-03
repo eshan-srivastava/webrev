@@ -10,18 +10,30 @@
 <body>
     <div id="preloader"></div>
     
-    <div class="container">
+    <h1>Image Slider</h1>
+    <h6>here you can slide the slider </h6>
+    <div class="slider-container">
+        
         <div class="img-box">
-            <img src="./assets/slider-base.PNG" alt="">
-        </div>
+            <img src="./assets/slider-base.jpg" width="100%">
+            
+            <div class="img-wrap">
+                <img src="./assets/slider-base2.jpg" id="wrap">
+            </div>
+            
+            <span id="arrow-span">
+                <img src="./assets/slider-arrow.png" class="arrow">
+            </span>
+        
+        </div>      
+    </div>
+    <blockquote>
+        Credits to Quino Al (@quinoal) for beach and Nils Leonhardt for mountain scape
+    </blockquote>  
+   
+    <div class="img-grid">
         
     </div>
-
-    <script>
-        var loader = doucment.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
