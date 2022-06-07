@@ -10,8 +10,11 @@
 <body>
     <div id="preloader"></div>
     
-    <h1>Image Slider</h1>
-    <h6>here you can slide the slider </h6>
+    <div class="titles">
+        <h1>Image Slider</h1>
+        <h6>here you can slide the slider </h6>
+    </div>
+
     <div class="slider-container">
         
         <div class="img-box">
@@ -33,12 +36,18 @@
    
     <div class="select-bar">
         
+        <div class="titles">
+            <h2>Game Selector</h2>
+            <p>Select a game to display info</p>
+        </div>
+        
         <div class="selector">
             <div id="selectfield">
-                <p>Select Game</p>
-                <img src="./assets/drop-arrow.png">
+                <img id="fieldimg" width="40px"/>
+                <p id="selecttext">Select Game</p>
+                <img src="./assets/drop-arrow.png" id="droparr">
             </div>
-            <ul id="game-list">
+            <ul id="game-list" class="hide-list">
                 <li class="game-item">
                     <img src="https://img.icons8.com/plasticine/100/undefined/counter-strike-global-offensive.png"/>
                     <p>Counter Strike: Global Offensive</p>
@@ -64,7 +73,9 @@
                     <p>Battlefield 1</p>
                 </li>
             </ul>
-
+        <span>
+            <button>Go</button>
+        </span>
         </div>
     </div>
     
