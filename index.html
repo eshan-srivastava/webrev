@@ -8,15 +8,86 @@
     <title>Document</title>
 </head>
 <body>
-
     <div id="preloader"></div>
     
+    <div class="titles">
+        <h1>Image Slider</h1>
+        <h6>here you can slide the slider </h6>
+    </div>
 
-    <script>
-        var loader = doucment.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-    </script>
+    <div class="slider-container">
+        
+        <div class="img-box">
+            <img src="./assets/slider-base.jpg" width="100%">
+            
+            <div class="img-wrap">
+                <img src="./assets/slider-base2.jpg" id="wrap">
+            </div>
+            
+            <span id="arrow-span">
+                <img src="./assets/slider-arrow.png" class="arrow">
+            </span>
+        
+        </div>      
+    </div>
+    <blockquote>
+        Credits to Quino Al (@quinoal) for beach and Nils Leonhardt for mountain scape
+    </blockquote>  
+   
+    <div class="select-bar">
+        
+        <div class="titles">
+            <h2>Game Selector</h2>
+            <p>Select a game to display info</p>
+        </div>
+        
+        <div class="selector">
+            <div id="selectfield">
+                <img id="fieldimg" width="40px"/>
+                <p id="selecttext">Select Game</p>
+                <img src="./assets/drop-arrow.png" id="droparr">
+            </div>
+            <ul id="game-list" class="hide-list">
+                <li class="game-item">
+                    <img src="https://img.icons8.com/plasticine/100/undefined/counter-strike-global-offensive.png"/>
+                    <p>Counter Strike: Global Offensive</p>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/genshin-icon.jfif">
+                    <p>Genshin Impact</p>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/valorant.live.ico">
+                    <p>Valorant</p>
+                </li>
+                <li class="game-item">
+                    <img src="https://img.icons8.com/ios/50/undefined/destiny-2.png"/>
+                    <p>Destiny 2</p>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/rainbow-six-icon-216934.png">
+                    <p>Tom Clancy's Rainbow Six Siege</p>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/bf1-icon.png">
+                    <p>Battlefield 1</p>
+                </li>
+            </ul>
+        <span>
+            <button>Go</button>
+        </span>
+        </div>
+    </div>
+    
+    <div id="credits">
+        <p>Credits for the some assets used</p>
+        <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/Kmdk0K2oJ6e3/counter-strike-global-offensive">Counter Strike Global Offensive icon by Icons8</a>
+        <br>
+        <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/lyxpdOvXJrwV/destiny-2">Destiny 2</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
+        <br>
+        <a href="https://flyclipart.com/rainbow-six-icon-rainbow-six-png-216934">Rainbow Six Icon - Rainbow Six PNG</a>
+    </div>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
